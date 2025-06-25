@@ -1,0 +1,33 @@
+give @p minecraft:written_book
+[minecraft:lore=['{"text":"Ready-up, Directions, and Customizable Settings!"}'],
+minecraft:written_book_content=
+{author:"spencerHtml",pages:[{raw:'["",{"bold":true,"color":"dark_blue","text":"BORDER WARS\\n"},
+{"bold":true,"color":"dark_blue","italic":true,"text":"By: spencerHtml"},
+{"text":"\\n\\nWelcome to Border Wars! Use this book to ready-up, for the "},
+{"clickEvent":{"action":"change_page","value":"2"},"text":"DIRECTIONS","underlined":true},
+{"text":", and customizable ","underlined":false},
+{"clickEvent":{"action":"change_page","value":"3"},"text":"SETTINGS","underlined":true},
+{"text":"\\n\\n"},
+{"clickEvent":{"action":"run_command","value":"/trigger ready set 1"},"color":"#00FF31","text":"Ready!"},
+{"text":"\\n"},
+{"clickEvent":{"action":"run_command","value":"/trigger ready set 2"},"color":"#FF0300","text":"Unready!"}]'},{raw:'["",{"bold":true,"text":"Directions:","underlined":true},{"text":"\\nClick "},
+{"clickEvent":{"action":"open_url","value":"https://docs.google.com/document/d/1MP6SctHkUzpZN5mcFZR0M8uMxgRfeOVqRbEmkSM_mk8/edit?usp=sharing"},"color":"dark_blue","text":"here"}]'},{raw:'["",{"bold":true,"text":"Settings:"},
+{"text":"\\n\\n"},{"color":"dark_blue","italic":true,"text":"Difficulty:"},
+{"text":"\\n"},{"clickEvent":{"action":"run_command","value":"/trigger settings set 3"},"text":"Peaceful"},
+{"text":", "},{"clickEvent":{"action":"run_command","value":"/trigger settings set 4"},"text":"Easy"},
+{"text":"\\n"},{"clickEvent":{"action":"run_command","value":"/trigger settings set 5"},"text":"Normal"},
+{"text":", "},{"clickEvent":{"action":"run_command","value":"/trigger settings set 6"},"text":"Hard"},
+{"text":"\\n\\n"},{"color":"dark_blue","italic":true,"text":"Weather:"},
+{"text":"\\n"},{"clickEvent":{"action":"run_command","value":"/trigger settings set 1"},"text":"Normal Cycle"},
+{"text":"\\n"},{"clickEvent":{"action":"run_command","value":"/trigger settings set 2"},"text":"Always Clear"},
+{"text":"\\n\\n"},{"color":"dark_blue","italic":true,"text":"Keep-Inventory During Grace Period:"},
+{"text":"\\n"},
+{"clickEvent":{"action":"run_command","value":"/trigger settings set 7"},"text":"True"},
+{"text":", "},{"clickEvent":{"action":"run_command","value":"/trigger settings set 8"},"text":"False"},
+{"text":"\\n "}]'}],title:{raw:"Border Wars!"}}]
+
+give @s minecraft:written_book
+[written_book_content={pages:[[["",
+{"text":"Spawn","clickEvent":{"action":"run_command","value":"/tp @p 0 1 0 180 0"}}]]],title:"Build´s Book",author:Game,generation:0},]
+
+

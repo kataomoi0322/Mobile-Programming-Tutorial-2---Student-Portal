@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+    <script>
+        function Add(){
+            var input1 = document.getElementById("numberInput1").value;
+            var input2 = document.getElementById("numberInput2").value;
+
+            var number1 = parseFloat(input1);
+            var number2 = parseFloat(input2);
+            var result= number1 +number2;
+
+            document.getElementById("result").innerText="Result of number1 add number2: " +result;
+
+        }
+
+        function Sub(){
+            var input1 = document.getElementById("numberInput1").value;
+            var input2 = document.getElementById("numberInput2").value;
+
+            var number1 = parseFloat(input1);
+            var number2 = parseFloat(input2);
+            var result= number1 - number2;
+
+            document.getElementById("result").innerText="Result of number1 subtract number2: " +result;
+
+        }
+
+        function Mul(){
+            var input1 = document.getElementById("numberInput1").value;
+            var input2 = document.getElementById("numberInput2").value;
+
+            var number1 = parseFloat(input1);
+            var number2 = parseFloat(input2);
+            var result= number1 * number2;
+
+            document.getElementById("result").innerText="Result of number1 multiply number2: " +result;
+
+        }
+
+        function Div(){
+            var input1 = document.getElementById("numberInput1").value;
+            var input2 = document.getElementById("numberInput2").value;
+
+            var number1 = parseFloat(input1);
+            var number2 = parseFloat(input2);
+            var result= number1 / number2;
+
+            document.getElementById("result").innerText="Result of number1 sub number2: " +result;
+
+        }
+
+        function Clear(){
+            document.getElementById("numberInput1").value = " ";
+            document.getElementById("numberInput2").value = " ";
+            document.getElementById("result").innerText="Result will appear here.";
+        }
+    </script>
+    </head>
+    <body>
+        <h2>Multiplication Calculator</h2>
+        <label for="numberInput1">Enter number 1:</label>
+        <input type="text" id="numberInput1"><br>
+        <label for="numberInput2">Enter number 2:</label>
+        <input type="text" id="numberInput2"><br><br>
+        
+        <button onclick="Add()">add</button>
+        <button onclick="Sub()">subtract</button>
+        <button onclick="Mul()">multiply</button>
+        <button onclick="Div()">divide</button>
+        <button onclick="Clear()">Clear</button>
+        <p id="result">Result will appear here.</p>
+
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-black w3-wide"><a href="ass_mainmenu.html">Back to Main Menu</a></span>
+        </div>
+    </body>
+</html>

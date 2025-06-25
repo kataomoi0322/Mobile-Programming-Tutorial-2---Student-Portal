@@ -1,0 +1,23 @@
+//书的名字是
+
+give @p minecraft:written_book[]//里面是追加信息
+//标题
+minecraft:lore=['{"text":"Ready-up, Directions, and Customizable Settings!"}'],
+//书的内容
+minecraft:written_book_content={}
+
+give @p minecraft:written_book
+[written_book_content={pages:['[["",
+{"bold":true,"color":"dark_blue","italic":true,"text":"SpawnPoint","clickEvent":{"action":"run_command","value":"/tp @p 359 63 856"}},
+{"color":"dark_green","text":"\\n\\n女巫刷怪塔","clickEvent":{"action":"run_command","value":"/tp @p -3541 65 248"}},
+{"text":"\\n\\n蜘蛛刷怪塔","clickEvent":{"action":"run_command","value":"/tp @p 326 -30 836"}},
+{"text":"\\n\\n村民交易","clickEvent":{"action":"run_command","value":"/tp @p 425 41 802"}},
+{"text":"\\n\\n终界传送门","clickEvent":{"action":"run_command","value":"/tp @p 206 -22 1892"}}]]'],title:"Build´s Book",author:Game,generation:0}] 1
+  
+//206 -22 1892
+/fill 457 42 826 449 34 826 minecraft:cobblestone_slab replace minecraft:air
+/fill 449 34 825 457 42 826 minecraft:air replace minecraft:sponge
+/setblock 457 42 826 minecraft:sponge
+/setblock 449 34 826 minecraft:sponge
+
+/setblock -3533 180 221 minecraft:chest[facing=south,type=single,waterlogged=false]{Items:[{Slot:22b,components:{"minecraft:written_book_content":{author:"Game",pages:[{raw:'{"extra":[{"bold":true,"clickEvent":{"action":"run_command","value":"/tp @p 359 63 856"},"color":"dark_blue","italic":true,"text":"SpawnPoint"},{"clickEvent":{"action":"run_command","value":"/tp @p -3541 65 248"},"color":"dark_green","text":"\\n\\n女巫刷怪塔"},{"clickEvent":{"action":"run_command","value":"/tp @p 326 -30 836"},"text":"\\n\\n蜘蛛刷怪塔"},{"clickEvent":{"action":"run_command","value":"/tp @p 425 41 802"},"text":"\\n\\n村民交易"},{"clickEvent":{"action":"run_command","value":"/tp @p 206 -22 1892"},"text":"\\n\\n终界传送门"},{"clickEvent":{"action":"run_command","value":"/tp @s -3528.54 187.00 237.70 -265.80 36.758"},"color":"dark_green","text":"\\n\\n女巫刷怪塔挂机点"}],"text":""}'}],resolved:1b,title:{raw:"Build´s Book"}}},count:1,id:"minecraft:written_book"}]}
