@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2 id="demo">What Can JavaScript Do?</h2>
+    <p id="demo1">JavaScript can change HTML content</p>
+
+    <button type="button" onclick="toggleText()">Click Me!</button>
+
+    <script>
+        let toggled = false;
+
+        function toggleText() {
+            const heading = document.getElementById("demo");
+            const paragraph = document.getElementById("demo1");
+
+            if (!toggled) {
+                heading.innerHTML = "Apa JavaScript Boleh Buat!";
+                paragraph.innerHTML = "Tukar Sesuatu!";
+            } else {
+                heading.innerHTML = "What Can JavaScript Do?";
+                paragraph.innerHTML = "JavaScript can change HTML content";
+            }
+
+            toggled = !toggled;
+        }
+    </script>
+
+</body>
+</html>

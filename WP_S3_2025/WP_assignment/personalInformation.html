@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Information</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Raleway", sans-serif;
+    }
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .left {
+        flex: 1;
+    }
+
+    .right {
+        flex: 0 0 300px;
+    }
+
+    .right img {
+        width: 10%;
+        height: auto;
+        border: 1px solid black;
+    }
+
+    .bgimg-1 {
+      background-image: url('https://www.w3schools.com/w3images/parallax3.jpg');
+      min-height: 100vh;
+    }
+
+    .bgimg-2 {
+          background-image: url('https://www.w3schools.com/w3images/parallax2.jpg');
+          min-height: 400px;
+    }
+
+    .bgimg-3 {
+      background-image: url('kanade_happybrithday20.png');
+      min-height: 100vh;
+    }
+    
+    
+  </style>
+</head>
+<body>
+
+<!-- First Parallax Image -->
+<div class="bgimg-1 w3-display-container w3-opacity-min parallax">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Personal <span class="w3-hide-small">Information</span></span>
+  </div>
+</div>
+
+<!-- Container Section -->
+ <div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+        <div class="right">
+            <img src="persona image.jpg" alt="this is personal image">
+        </div>
+        <div class="left w3-container w3-text-black w3-border-black right" id="Personal Information">
+          <h2>Personal Information</h2>
+          <p >
+          Name     : Lee Xuan Hui<br>
+          No.Matric: A24DW0423<br>
+          Program  : Diploma in Computer Science <br>
+          </p>
+          <br>
+      <p class="w3-center"><a href="personalInformation.html" >Personal Information</a></p>
+      </div>
+      
+      
+  </div>
+
+<!-- Second Parallax Image -->
+<div class="bgimg-2 w3-display-container w3-opacity-min parallax">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Curriculum Vitae</span>
+  </div>
+</div>
+
+<!-- More content -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <p class="w3-center"><em>Click link below to get CV</em></p>
+  <p class="w3-center"><a href="CV.html" >view Curriculum Vitae as website</a></p>
+  <p class="w3-center"><a href="CV.pdf" download>get Curriculum Vitae as pdf file</a></p>
+</div>
+
+<!-- Third Parallax Image -->
+<div class="bgimg-3 w3-display-container w3-opacity-min parallax">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-black w3-wide"><a href="ass_mainmenu.html">Back to Main Menu</a></span>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16 w3-xlarge w3-section">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q1 Product Tax Calculator</title>
+    <script>
+        function Calculator(){
+            var input1 = document.getElementById("numberInput1").value;
+
+            var number1 = parseFloat(input1);
+            var tax = number1 * 1.06;
+            document.getElementById("tax").innerText="Tax amount" +tax.toFixed(2);
+        }
+    </script>
+    </head>
+    <body>
+        <h2>Q1 Product Tax Calculator</h2>
+        <label for="numberInput">Enter Product Price:</label>
+        <input type="text" id="numberInput1"><br>
+        <button onclick="Calculator()">Calculator</button>
+        <p id="tax"></p>
+    </body>
+</html>

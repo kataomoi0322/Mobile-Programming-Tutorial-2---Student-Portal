@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Halloween Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a0d0d;
+            color: white;
+            font-family: 'Cinzel Decorative', serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .halloween {
+            font-size: 20px;
+            position: relative;
+        }
+
+        .halloween.mirror {
+            transform: scaleY(-1);
+            opacity: 0.3;
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform-origin: top;
+            translate: -50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="halloween">Halloween</div>
+    <div class="halloween mirror">Halloween</div>
+</body>
+</html>

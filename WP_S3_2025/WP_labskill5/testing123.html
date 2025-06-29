@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function cal(){
+            var input1 = document.getElementById("Assignment").value;
+            var input2 = document.getElementById("Exam").value;
+
+            var num1 = parseFloat(input1);
+            var num2 = parseFloat(input2);
+            
+            var resultPara = num1 + num2;
+
+            document.getElementById("Assignment").innerText="Assignment:".value;
+            document.getElementById("Exam").innerText="Exam:".value;
+            document.getElementById("resultPara").innerText="Result:".value;
+            document.getElementById("resultPara").innerText="Result of number1 sub number2: " +result;
+        }   
+        </script>
+        <title>Mark calculator</title>
+    </head>
+    <body>
+        <h1>Final Mark Calculator</h1>
+        <h1 style="color: yellow;" id="title">hallo</h1>
+        <input type="number" id="Assignment">Assignment(30%):
+        <br>
+        <input type="number" id="Exam">Final Exam(30%):
+        <br>
+        <button onclick="cal()">calculator</button>
+        <p>Total mark: document.getElementById("resultpara").value</p>
+        <p id="resultPara">total mark </p>
+    </body>
+
+</html>

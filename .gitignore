@@ -1,4 +1,14 @@
+# Ignore specific files
 hi.cpp
 .pdf
-.txt
 .doc
+
+# Ignore all .txt files
+*.txt
+
+# But keep readme.txt
+!readme.txt
+
+# Ignore folders
+.vscode/
+python/
