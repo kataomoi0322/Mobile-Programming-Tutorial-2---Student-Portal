@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		function calculate(){
+			let child = parseInt(document.getElementById("child").value);
+			
+			let fee = 1000*child;
+            let discount;
+			if(child >0 && child <=3){
+				discount = 0.95;
+			}else if (child >3 && child <= 5){
+				discount = 0.93;
+			}else{
+				discount = 0.9;
+			}
+			
+			let totalfee = fee * discount;
+            totalfee = totalfee.toFixed(2); 
+			document.getElementById("result").nnerHTML="Total fee:" + fee +"<br> Discount value:" + discount + "<br>Total Fee Due:" + totalfee;
+		}
+	</script>
+</body>
+<head>
+	<h1>Calculator </h1>
+	<p> press enter number of your children</p>
+	<input type="number" id="child" name="child">
+	<br>
+	<button onclick="calculate()">Calculate</button>
+	<p id="result"></p>
+</head>
+
+</html>
