@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab Skill 1 - Lee Xuan Hui</string>
+    <string name="getting_help">Getting Help</string>
+    <string name="settings_options">Settings Options</string>
+    <string name="insert_your_text_here">Insert Your text here</string>
+    <string name="light">Light</string>
+    <string name="voice">Voice</string>
+    <string name="signal">Signal</string>
+    <string name="settings_description">Settings</string>
+</resources>
