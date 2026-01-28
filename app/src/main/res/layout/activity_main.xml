@@ -29,20 +29,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/black"
-            android:text="Username: " />
+            android:text="Username: "
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/editTextText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Plese enter your name"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColorHint="#808080"/>
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password: " />
+            android:text="Password: "
+            android:textColor="@color/black"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,7 +60,8 @@
                 android:layout_weight="1"
                 android:textSize="16sp"
                 android:hint="Please enter your password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColorHint="#808080"/>
 
             <ImageButton
                 android:id="@+id/imageView2"
@@ -71,7 +75,9 @@
             android:id="@+id/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="i accept the terms and conditions" />
+            android:text="i accept the terms and conditions"
+            android:textColor="@color/black"
+            android:backgroundTint="#1A237E"/>
     </LinearLayout>
 
     <Button
@@ -79,6 +85,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="login"
+        android:textColor="@color/white"
+        android:backgroundTint="#1A237E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -92,6 +100,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FF0000"
         android:text="Forgot password"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"

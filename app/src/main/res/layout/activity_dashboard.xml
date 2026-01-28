@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#673AB7"
+    android:background="#1A237E"
     tools:context=".dashboard">
 
     <TextView
@@ -52,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Task:"
-                android:textColor="#311B92"
+                android:textColor="#1A237E"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -62,7 +62,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="2dp">
+                app:cardElevation="2dp"
+                android:backgroundTint="#E3F2FD">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -105,7 +106,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="2dp">
+                app:cardElevation="2dp"
+                android:backgroundTint="#E3F2FD">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -148,7 +150,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="2dp">
+                app:cardElevation="2dp"
+                android:backgroundTint="#E3F2FD">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -201,7 +204,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="2dp">
+                app:cardElevation="2dp"
+                android:backgroundTint="#E3F2FD">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -227,9 +231,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="History"
-                            android:textColor="#311B92"
+                            android:textColor="#1A237E"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            />
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -243,7 +248,7 @@
                                 android:layout_centerVertical="true"
                                 android:layout_marginEnd="40dp"
                                 android:progress="50"
-                                android:progressTint="#673AB7" />
+                                android:progressTint="#1A237E" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -264,7 +269,8 @@
                 android:layout_marginTop="12dp"
                 android:layout_marginBottom="16dp"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="2dp">
+                app:cardElevation="2dp"
+                android:backgroundTint="#E3F2FD">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -290,7 +296,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Mathematics"
-                            android:textColor="#311B92"
+                            android:textColor="#1A237E"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -306,7 +312,7 @@
                                 android:layout_centerVertical="true"
                                 android:layout_marginEnd="40dp"
                                 android:progress="10"
-                                android:progressTint="#673AB7" />
+                                android:progressTint="#1A237E" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -329,7 +335,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="24dp"
-        android:backgroundTint="#5E35B1"
+        android:backgroundTint="#FF0000"
         android:drawableStart="@android:drawable/ic_lock_power_off"
         android:paddingHorizontal="16dp"
         android:text="Logout"

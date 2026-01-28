@@ -17,6 +17,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         ClickableSpan clickableSpan = new ClickableSpan() {
             @Override
             public void onClick(View widget) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://corporate.utm.my/webteam/policy/"));
                 startActivity(browserIntent);
             }
         };
@@ -129,7 +130,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // 5. Modern Back Press handling
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                finishAffinity();
+                System.exit(0);
+            }
+        });
     }
-
-
 }

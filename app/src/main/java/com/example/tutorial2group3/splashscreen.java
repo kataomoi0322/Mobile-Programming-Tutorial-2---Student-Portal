@@ -29,6 +29,6 @@ public class splashscreen extends AppCompatActivity {
                 Intent intent = new Intent(splashscreen.this, MainActivity.class);
                 startActivity(intent);
             }
-        }, 10000); // 10000 milliseconds = 10 seconds
+        }, 1000); // 10000 milliseconds = 10 seconds
     }
 }

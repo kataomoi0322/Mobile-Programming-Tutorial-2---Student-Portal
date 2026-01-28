@@ -43,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About School "
+            android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
             android:gravity="center" />
@@ -51,6 +52,7 @@
             android:id="@+id/contentAboutSchool"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="Valora Academy is a prestigious institution known for shaping intelligent, capable, and principled individuals."
             android:textSize="15sp"
             android:gravity="center"  />
@@ -78,6 +80,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="History School "
+            android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -86,6 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="@color/black"
             android:text="Valora Academy was founded centuries ago by the scholar Valoran, who believed knowledge could bring unity and progress during a time of conflict."
             android:textSize="15sp" />
     </LinearLayout>
