@@ -2,6 +2,7 @@
 hi.cpp
 .pdf
 .doc
+.class
 
 # Ignore all .txt files
 *.txt
@@ -12,3 +13,7 @@ hi.cpp
 # Ignore folders
 .vscode/
 python/
+
+# git add .
+# git commit -m "hi "
+# git push origin master
