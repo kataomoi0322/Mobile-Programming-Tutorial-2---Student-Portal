@@ -132,8 +132,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
+    public void onBackPressedDispatcher() {
+        super.getOnBackPressedDispatcher();
         finishAffinity();
         System.exit(0);
     }
